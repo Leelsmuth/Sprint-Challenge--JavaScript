@@ -91,15 +91,14 @@ Name email@example.com
 
 Log the result of your new array. */
 const contactInfo = [];
-console.log(contactInfo);
 
 for (let i = 0; i < graduates.length; i++ ) {
   contactInfo.push(graduates[i].first_name + " " + graduates[i].email);
 };
 
+console.log(contactInfo);
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 const uni = [];
-console.log(uni);
 
 for (let i = 0; i < graduates.length; i++) {
   if (graduates[i].university.includes('Uni')) {
@@ -107,6 +106,7 @@ for (let i = 0; i < graduates.length; i++) {
   }
 };
 
+console.log(uni);
 // ==== ADVANCED Array Methods ====
 
 // Given this zoo data from around the United States, follow the instructions below.  Use the specific array methods in the requests below to solve the problems.
@@ -129,12 +129,12 @@ The zoo wants to display both the scientific name and the animal name in front o
 
 */
 let animalNames = [];
-console.log(animalNames);
 
 zooAnimals.forEach(function(animal) {
   return   animalNames.push({Name: animal.animal_name, Scientific: animal.scientific_name});
 })
 
+console.log(animalNames);
 /* Request 2: .map()    
 
 The zoos need a list of all their animal's names (names only, not scientific) converted to lower case.  Create a new array named lowerCase and map over each name to convert them all to lower case.  Log the resut.
@@ -142,11 +142,13 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 */
 
 const lowerCase = [];
-console.log(lowerCase); 
 
 zooAnimals.map(function(animal) {
   lowerCase.push(animal.animal_name.toLowerCase());
 })
+
+console.log(lowerCase); 
+
 /* Request 3: .filter() 
 
 The zoos are concenred about animals with a lower population count. Find out which animals have a population less than 5.
