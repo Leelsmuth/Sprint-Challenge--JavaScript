@@ -32,7 +32,7 @@ Edit this document to include your answers after each question. Make sure to lea
 Ans: forEach calls a provided function on each element in your array. This callback is allowed to mutate the calling array. map returns an entirely new Array, and does not affect the original array.
 
 2. What is the difference between a function and a method?
-Ans: 
+Ans: Methods have a “receiver” while functions do no
 
 3. What is closure?
 Ans: A closure is the combination of a function enclosed with references to its surrounding state (the lexical environment).
