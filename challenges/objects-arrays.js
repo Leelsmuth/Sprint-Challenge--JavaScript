@@ -132,7 +132,7 @@ let animalNames = [];
 console.log(animalNames);
 
 zooAnimals.forEach(function(animal) {
-  return animalNames.push(`${animal.animal_name} ${animal.scientific_name}`)
+  return   animalNames.push({Name: animal.animal_name, Scientific: animal.scientific_name});
 })
 
 /* Request 2: .map()    
